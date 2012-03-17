@@ -2,9 +2,9 @@
 
 ## Overview
 
-A skeleton pre-configured to rapid development with the Sinatra framework.
+A skeleton pre-configured to rapid development with the [Sinatra](http://www.sinatrarb.com/) framework.
 
-Uses MongoDB as database, RSpec and Webrat for tests, and a strong console environment, like `rails console`
+Uses [MongoDB](http://www.mongodb.org/) as database, [RSpec](http://rspec.info/) and [Webrat](https://github.com/brynary/webrat) for tests, and a strong console environment, like `rails console`
 
 
 ## Gems supported
@@ -13,11 +13,11 @@ Uses MongoDB as database, RSpec and Webrat for tests, and a strong console envir
 * mongoid
 
 #### Console
-* pry
-* racksh
-* awesome_print
-* hirb
-* wirb
+* [pry](https://github.com/pry/pry)
+* [racksh](https://github.com/sickill/racksh)
+* [awesome_print](https://github.com/michaeldv/awesome_print)
+* [hirb](https://github.com/cldwalker/hirb)
+* [wirb](https://github.com/janlelis/wirb)
 
 #### Test
 * rspec
