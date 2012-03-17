@@ -9,7 +9,7 @@ Uses [MongoDB](http://www.mongodb.org/) as database, [RSpec](http://rspec.info/)
 
 ## Gems supported
 
-#### Databse
+#### Database
 * mongoid
 
 #### Console
