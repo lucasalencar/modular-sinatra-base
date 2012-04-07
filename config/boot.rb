@@ -1,7 +1,7 @@
 require "bundler"
-Bundler.setup(:default, ENV.fetch("RACK_ENV", :development))
-Bundler.require
-Bundler.require(:console)
+Bundler.setup
+Bundler.require(:default, :console, ENV.fetch("RACK_ENV", :development))
+# Bundler.require(:console)
 Wirb.start
 Hirb.enable
 

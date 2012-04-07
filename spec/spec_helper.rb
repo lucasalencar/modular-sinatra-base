@@ -2,21 +2,11 @@ ENV["RACK_ENV"] = "test"
 
 require File.dirname(__FILE__) + "/../app"
 
-require 'rack/test'
-
-require "webrat"
-
-require "factory_girl"
-require "factories"
-
-Webrat.configure do |config|
-	config.mode = :rack
-end
+Capybara.app = Sinatra::Application
 
 RSpec.configure do |config|
  	config.include Rack::Test::Methods
- 	config.include Webrat::Methods
- 	config.include Webrat::Matchers
+ 	config.include Capybara
 
 	def app
 		Sinatra::Application
