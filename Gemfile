@@ -2,7 +2,7 @@ source :rubygems
 
 gem 'sinatra', '1.3.2'
 gem 'mongoid', '2.4.7'
-gem 'bson_ext', '1.6.1'
+gem 'bson_ext', '1.6.1', :require => "mongo"
 gem 'puma', '1.1.1'
 
 group :development, :test do
