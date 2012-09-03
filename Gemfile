@@ -1,25 +1,24 @@
 source :rubygems
 
-gem 'sinatra', '1.3.2'
-gem 'mongoid', '2.4.7'
-gem 'bson_ext', '1.6.1', :require => "mongo"
-gem 'puma', '1.1.1'
+ruby "1.9.3"
+
+gem 'sinatra', '1.3.3'
+gem 'mongoid', '3.0.5'
+gem 'unicorn', '4.3.1'
 
 group :development, :test do
 	gem 'sinatra-reloader', '1.0', require: 'sinatra/reloader'
-	gem 'pry', '0.9.8.4'
-	gem 'racksh', '0.9.11'
+	gem 'pry'
+	gem 'racksh'
 end
 
 group :console do
-	gem 'awesome_print', '1.0.2'
-	gem 'hirb', '0.6.2'
-	gem 'wirb', '0.4.2'
+	# gem 'awesome_print'
+	gem 'hirb'
+	gem 'wirb'
 end
 
 group :test do
-  gem 'rspec', '2.9.0'
+  gem 'rspec', '2.11.0'
   gem 'rack-test', '0.6.1', require: 'rack/test'
-  gem 'factory_girl', '3.1.0'
-  gem 'capybara', '1.1.2', require: 'capybara/rspec'
 end
