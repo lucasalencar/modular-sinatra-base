@@ -4,12 +4,13 @@
 
 A skeleton pre-configured to rapid development with the [Sinatra](http://www.sinatrarb.com/) framework.
 
-Uses [MongoDB](http://www.mongodb.org/) as database, [RSpec](http://rspec.info/) and [Webrat](https://github.com/brynary/webrat) for tests, and a strong console environment, like `rails console`
+Uses SQLite3 as database, [RSpec](http://rspec.info/) and [Webrat](https://github.com/brynary/webrat) for tests, and a strong console environment, like `rails console`
 
 ## Gems supported
 
 #### Database
-* mongoid
+* sqlite3
+* active record
 
 #### Console
 * [pry](https://github.com/pry/pry)

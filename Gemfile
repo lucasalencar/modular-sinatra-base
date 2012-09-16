@@ -3,8 +3,11 @@ source :rubygems
 ruby "1.9.3"
 
 gem 'sinatra', '1.3.3'
-gem 'mongoid', '3.0.5'
+gem 'sqlite3', '1.3.6'
 gem 'unicorn', '4.3.1'
+gem 'activerecord', '3.2.8'
+gem 'sinatra-activerecord', '1.1.1', require: 'sinatra/activerecord'
+gem 'rake', '0.9.2.2' # Used to rake tasks work on project directory
 
 group :development, :test do
 	gem 'sinatra-reloader', '1.0', require: 'sinatra/reloader'
