@@ -1,33 +1,38 @@
-# Sinatra Application
+# Modular Sinatra Application
 
 ## Overview
 
-A skeleton pre-configured to rapid development with the [Sinatra](http://www.sinatrarb.com/) framework.
+A structured project to develop modular applications with [Sinatra](http://www.sinatrarb.com/).
 
-Uses SQLite3 as database, [RSpec](http://rspec.info/) and [Webrat](https://github.com/brynary/webrat) for tests, and a strong console environment, like `rails console`
+Uses SQLite3 as database, [RSpec](http://rspec.info/) for tests, and racksh as console.
 
-## Gems supported
+## Included gems
 
-#### Database
+####Database
 * sqlite3
-* active record
+* sinatra-activerecord
 
 #### Console
 * [pry](https://github.com/pry/pry)
 * [racksh](https://github.com/sickill/racksh)
-* [awesome_print](https://github.com/michaeldv/awesome_print)
 * [hirb](https://github.com/cldwalker/hirb)
 * [wirb](https://github.com/janlelis/wirb)
 
 #### Test
 * rspec
 * rack-test
-* factory_girl
-* webrat
 
 #### Others
 * sinatra-reloader
-* bson_ext
-* thin
+* rack-mount
 
-If you have any suggestions, I'll appreciate to accept your pull request.
+####And more
+Check the Gemfile for more information.
+
+This project includes:
+* An example controller to give an idea on how all this works.
+* That's it.
+
+Based on [sinatra-base](https://github.com/andrielfn/sinatra-base). Thanks [Andriel](https://github.com/andrielfn)! :)
+
+Lucas André de Alencar ®

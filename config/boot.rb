@@ -6,6 +6,9 @@ Hirb.enable
 
 require File.expand_path("../environment", __FILE__)
 
-Dir[File.expand_path("../../models/**/*", __FILE__)].each { |model| require model }
+def require_folder(path)
+  Dir[File.expand_path("../#{path}/**/*", __FILE__)].each { |file| require file }
+end
 
-set :database, "sqlite:///#{Sinatra::Base.environment}.db"
+require_folder("../models")
+require_folder("../controllers")
